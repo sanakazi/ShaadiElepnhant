@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dialog_title">25sp</dimen>
+
+    <!--dialog_add_budget-->
+    <dimen name="dialog_title_margin_top">20dp</dimen>
+    <dimen name="dialog_event_name_margin">10dp</dimen>
+    <dimen name="dialog_title_cotainer_padding_bottom">30dp</dimen>
+
+    <!--fragment_login-->
+    <dimen name="login_btn_margin_top">10dp</dimen>
+    <dimen name="forgot_password_container_margin_top">20dp</dimen>
+    <dimen name="forgot_password_container_text_margin">10dp</dimen>
+    <dimen name="social_login_btn_margin_top">20dp</dimen>
+    <dimen name="social_login_btn_padding_left">10dp</dimen>
+    <dimen name="social_twitter_login_btn_margin_top">20dp</dimen>
+
+    <!--content_registration-->
+    <dimen name="dialog_register_margin">5dp</dimen>
+
+
+</resources>

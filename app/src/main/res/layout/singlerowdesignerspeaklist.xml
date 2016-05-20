@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iVDesignerpic"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="New Text"
+        android:id="@+id/textViewSubject"
+        android:textColor="#ed0b7f"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iVDesignerpic"
+        android:layout_toEndOf="@+id/iVDesignerpic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="New Text"
+        android:id="@+id/textViewmessage"
+        android:layout_below="@+id/textViewSubject"
+        android:layout_toRightOf="@+id/iVDesignerpic"
+        android:layout_toEndOf="@+id/iVDesignerpic" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewdate"
+        android:layout_below="@+id/textViewmessage"
+        android:layout_toRightOf="@+id/imgcalendar"
+        android:layout_toEndOf="@+id/imgcalendar"
+        android:paddingLeft="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:src="@drawable/ic_calender"
+        android:id="@+id/imgcalendar"
+        android:layout_below="@+id/textViewmessage"
+        android:layout_toRightOf="@+id/iVDesignerpic"
+        android:layout_toEndOf="@+id/iVDesignerpic"
+        android:layout_alignBottom="@id/textViewdate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="New Text"
+        android:id="@+id/textViewname"
+        android:layout_below="@+id/textViewdate"
+        android:layout_toRightOf="@+id/iVDesignerpic"
+        android:layout_toEndOf="@+id/iVDesignerpic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/but_readmore"
+        android:id="@+id/textViewReadmore"
+        android:layout_alignTop="@+id/textViewname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

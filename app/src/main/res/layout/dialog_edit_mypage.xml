@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@drawable/popup_bg">
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_title"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dialog_title_margin_top"/>
+
+    <ImageView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_below="@+id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_register_margin"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/name"/>
+
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_below="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_register_margin"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+
+        android:hint="@string/gender"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_below="@+id/gender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_register_margin"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/address"/>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_below="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_register_margin"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/country"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_below="@+id/country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_register_margin"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/city"/>
+
+    <EditText
+        android:id="@+id/phoneNo"
+        android:layout_below="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_register_margin"
+        android:inputType="number"
+        android:singleLine="true"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/phoneNo"/>
+
+    <Button
+        android:id="@+id/edit_mypage_save"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/phoneNo"
+        android:layout_margin="@dimen/dialog_event_name_margin"
+        android:background="@drawable/btn_rounded_add"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

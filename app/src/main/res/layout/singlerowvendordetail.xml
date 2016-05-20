@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+   >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imageViewTop"
+            android:layout_gravity="center_vertical"
+           />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:alpha="0.7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                android:text="NAME"
+                android:id="@+id/textViewName"
+                android:layout_alignParentLeft="true"
+
+                android:textColor="#ffffff"/>
+
+            <RatingBar
+                android:id="@+id/vendordetailrating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:progressDrawable="@drawable/ratingbar"
+                android:longClickable="false"
+                android:layout_marginLeft="15dp"
+
+                android:layout_toRightOf="@+id/textViewName"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/location"
+                android:id="@+id/imageViewvendorLocation"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_below="@id/textViewName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="LOCATIONLOCATION"
+                android:id="@+id/textViewLocation"
+                android:layout_below="@+id/textViewName"
+                android:layout_toRightOf="@id/imageViewvendorLocation"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:paddingBottom="1dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:src="@drawable/favorites_icon"
+                android:id="@+id/img_favorites_icon"
+                android:layout_below="@+id/textViewName"
+                android:layout_alignParentRight="true"
+              />
+
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Basic Information"
+        android:textAlignment="center"
+        android:background="#dde2e7"
+        android:textColor="#ed0b7f"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewBasicInformation"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:lineSpacingMultiplier="1.5"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+
+
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Portfolio"
+        android:textAlignment="center"
+        android:background="#dde2e7"
+        android:textColor="#ed0b7f"
+        android:id="@+id/textView7" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewPictures"
+        android:background="#ffffff"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linlayoutScrollImages"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Directions and Contacts"
+        android:textAlignment="center"
+        android:id="@+id/textView8"
+        android:background="#dde2e7"
+        android:textColor="#ed0b7f"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/contactname"
+        android:textStyle="bold"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            android:id="@+id/imgLoc"
+            android:textStyle="bold"
+
+            android:layout_alignParentRight="true"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactname"
+        android:text="New Text"
+        android:id="@+id/contactaddress"
+        android:lineSpacingMultiplier="1.5"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactaddress"
+        android:text="New Text"
+        android:id="@+id/contactphone"
+        />
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Comments"
+        android:id="@+id/textViewcomment"
+        android:textAlignment="center"
+        android:background="#dde2e7"
+        android:textColor="#ed0b7f"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listviewComment"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"></ListView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewDetailscomment"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write your review"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:id="@+id/text_review"
+            android:layout_alignBottom="@+id/img_review"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_comments_pressed"
+            android:layout_toLeftOf="@id/text_review"
+            android:layout_marginRight="5dp"
+            android:id="@+id/img_review"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="3dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

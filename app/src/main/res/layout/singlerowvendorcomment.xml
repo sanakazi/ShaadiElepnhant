@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sana"
+        android:id="@+id/textViewCommentorName" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/colon"
+        android:layout_toRightOf="@+id/textViewCommentorName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:layout_below="@+id/textViewCommentorName"
+        android:id="@+id/textViewSingleComment" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".0"
+        android:textStyle="bold"
+        android:id="@+id/ratingnum"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textStyle="bold"
+        android:id="@+id/getratingnum"
+        android:layout_toLeftOf="@id/ratingnum"/>
+    <RatingBar
+        android:id="@+id/ratingBarComment"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5dp"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:progressDrawable="@drawable/ratingbar"
+        android:longClickable="false"
+        android:layout_toLeftOf="@id/getratingnum"
+
+        />
+
+
+
+</RelativeLayout>
+</LinearLayout>

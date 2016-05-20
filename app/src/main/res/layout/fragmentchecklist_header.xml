@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/l2"
+    android:background="@drawable/btn_square_budget"
+    android:focusable="false"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus_icon"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:focusable="false"
+        android:clickable="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/add"
+        android:text="Add New Checklist"
+        android:textColor="#ffffff"
+        android:focusable="false"
+        android:clickable="false"/>
+</RelativeLayout>

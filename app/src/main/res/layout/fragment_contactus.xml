@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/mainbg">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="10dp"
+    android:id="@+id/contact">
+    <TextView
+        android:id="@+id/dialog_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus_app_name"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus_address1"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus_address2"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/address3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus_address3"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactus_number"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactus_email"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:id="@+id/social_media"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/txt_social_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactus_social_media"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/social_media_icons"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_facebook"
+                android:padding="5dp"
+                />
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_twitter"
+                android:padding="5dp"
+
+                />
+            <ImageView
+                android:id="@+id/instagram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_instagram"
+                android:padding="5dp"
+
+                />
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_youtube"
+                android:padding="5dp"
+
+                />
+            <ImageView
+                android:id="@+id/google_plus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_googleplus"
+                android:padding="5dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

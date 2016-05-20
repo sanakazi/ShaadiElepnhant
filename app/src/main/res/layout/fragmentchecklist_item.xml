@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:id="@+id/rl1">
+
+
+    <ImageView
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_gray"
+        android:id="@+id/img_del"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_gray"
+        android:id="@+id/img_edit"
+        android:layout_toLeftOf="@+id/img_del"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/img_del"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l2"
+        android:background="@drawable/btn_square_budget">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus_icon"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/add"
+            android:text="Add New Category"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/listchecklist_item"
+        android:layout_below="@id/l2"        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:childDivider="@drawable/divider_line"
+
+        >
+        <!-- android:groupIndicator="@drawable/indicator_left" -->
+    </ExpandableListView>
+
+</RelativeLayout>

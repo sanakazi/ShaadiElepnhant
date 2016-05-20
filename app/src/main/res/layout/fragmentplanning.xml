@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainbg">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checklist"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/checklist"/>
+
+    <TextView
+        android:id="@+id/txt_checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/planning_checklist"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/budget"
+        android:layout_below="@+id/checklist"
+        />
+
+    <TextView
+        android:id="@+id/txt_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/planning_budget"
+        android:layout_below="@+id/checklist"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/website"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/website"
+        android:layout_below="@+id/budget"/>
+
+    <TextView
+        android:id="@+id/txt_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/planning_website"
+        android:layout_below="@id/budget"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vendors"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/vendors"
+        android:layout_below="@+id/website"/>
+
+    <TextView
+        android:id="@+id/txt_vendors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/planning_fav_vendors"
+        android:layout_below="@+id/website"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/einvites"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/einvites"
+        android:layout_below="@+id/vendors"/>
+
+    <TextView
+        android:id="@+id/txt_einvites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/planning_einvites"
+        android:layout_below="@id/vendors"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+</RelativeLayout>
+    </ScrollView>

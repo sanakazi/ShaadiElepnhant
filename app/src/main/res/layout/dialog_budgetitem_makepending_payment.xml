@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:paddingBottom="@dimen/dialog_title_cotainer_padding_bottom">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_item_vendor_payment_title"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/close"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_vendor_pending"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_edit_text_background"
+            android:layout_margin="@dimen/dialog_event_name_margin"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/dialog_title" />
+
+        <EditText
+            android:id="@+id/dialog_paidToVendor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_vendor_pending"
+            android:background="@drawable/dialog_edit_text_background"
+            android:layout_margin="@dimen/dialog_event_name_margin"
+            android:inputType="number"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:hint="@string/budget_item_vendor_payment_pending"/>
+
+
+        <Button
+            android:id="@+id/dialog_add_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/dialog_paidToVendor"
+            android:layout_margin="@dimen/dialog_event_name_margin"
+            android:background="@drawable/btn_rounded_add"
+            android:text="@string/add"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

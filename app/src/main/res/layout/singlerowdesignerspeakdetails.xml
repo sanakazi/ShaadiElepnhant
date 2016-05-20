@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl2"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewSubject"
+        android:textColor="#ed0b7f"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubject"
+        android:paddingLeft="5dp"
+        android:src="@drawable/ic_calender"
+        android:id="@+id/imgcalendar"
+        android:layout_alignBottom="@+id/textViewInserDate"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubject"
+        android:text="New Text"
+        android:id="@+id/textViewInserDate"
+        android:layout_toRightOf="@id/imgcalendar"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewInserDate"
+        android:text="New Text"
+        android:id="@+id/textViewmemberName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:layout_below="@id/textViewmemberName"
+        android:id="@+id/textViewmessage" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewDesignerResponse"
+        android:layout_below="@id/textViewmessage"/>
+
+        <!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@id/textViewmessage" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/img"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:id="@+id/name"
+                        android:textColor="#ed0b7f"
+                        android:layout_toRightOf="@id/img"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"
+                        android:layout_toRightOf="@id/img"
+                        android:layout_below="@id/name"
+                        android:id="@+id/desc"/>
+
+
+                </RelativeLayout>
+                -->
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Comments"
+                android:textColor="#ed0b7f"
+                android:background="#dde2e7"
+                android:padding="5dp"
+                android:id="@+id/labelComment"
+                android:layout_below="@id/rl2"/>
+</RelativeLayout>
+
+            <ListView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewDetailscomment"
+                android:layout_below="@id/labelComment"
+                android:background="#ffffff">
+
+            </ListView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listViewDetailscomment"
+                android:background="#ffffff">
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_comments"
+                android:layout_alignParentRight="true"
+                android:background="#ffffff"
+                android:id="@+id/text_review"
+                android:layout_alignBottom="@+id/img_review"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comments_pressed"
+                android:layout_toLeftOf="@id/text_review"
+                android:layout_marginRight="5dp"
+                android:id="@+id/img_review"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="3dp"/>
+            </RelativeLayout>
+
+
+    </LinearLayout>

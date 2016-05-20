@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/mainbg"
+    android:id="@+id/l1">
+
+
+    <LinearLayout
+        android:id ="@+id/l2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false">
+
+        <Button
+            android:text="Popular"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+           android:id="@+id/imageViewRecent"
+            android:background="@drawable/button_rounded_popular_black"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:text="All"
+            android:background="@drawable/button_rounded_all_pink"
+            android:textColor="#ffffff"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:id="@+id/imageViewAll"
+            android:layout_alignParentTop="true"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewVenderlist"
+
+        android:divider="#dde2e7"
+        android:dividerHeight="20dp"
+        android:background="#ffffff"/>
+</LinearLayout>

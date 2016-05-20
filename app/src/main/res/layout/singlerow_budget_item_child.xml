@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:id="@+id/main"
+    android:padding="5dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/l1"
+    android:baselineAligned="false"
+    >
+<RelativeLayout
+    android:layout_weight="0.4"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:id="@+id/rl1">
+
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_plannedCost"
+        android:textSize="13dp"
+        android:text="1000 "
+        />
+
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullName"
+        android:textSize="13dp"
+        android:textColor="#ed0b7f"
+        android:text="Full Name"
+        android:layout_below="@+id/item_plannedCost"
+        />
+
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl2">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/actual"
+            android:textSize="13dp"
+            android:text="@string/txt_actual"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diff"
+            android:textSize="13dp"
+            android:text="@string/txt_diff"
+            android:layout_below="@+id/actual"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paid"
+            android:textSize="13dp"
+            android:text="@string/txt_paid"
+            android:layout_below="@+id/diff"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pending"
+            android:textSize="13dp"
+            android:text="@string/txt_pending"
+            android:layout_below="@+id/paid"
+            />
+
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_actual"
+            android:textSize="13dp"
+            android:text="1000"
+            android:layout_toRightOf="@+id/actual"
+            />
+
+
+        <TextView
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_diff"
+        android:textSize="13dp"
+        android:text="1000"
+        android:layout_below="@+id/actual"
+        android:layout_toRightOf="@+id/diff"
+        />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_paid"
+            android:textSize="13dp"
+            android:text="1000"
+            android:layout_below="@+id/diff"
+            android:layout_toRightOf="@+id/paid"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_pending"
+            android:textSize="13dp"
+            android:text="1000"
+            android:layout_below="@+id/paid"
+            android:layout_toRightOf="@+id/pending"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_weight="0.1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_gray"
+        android:id="@+id/img_edit"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        />
+
+
+        <ImageView
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_gray"
+            android:id="@+id/img_del"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_select_vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_select_vendor"
+        android:layout_below="@+id/l1"
+        android:textSize="11dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textColor="#ed0b7f"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_vendor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:text="Hello"
+        android:textSize="13dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_vendor_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_vendor_payment"
+        android:layout_below="@+id/txt_vendor_name"
+        android:textSize="11dp"
+        android:paddingLeft="5dp"
+        android:textColor="#ed0b7f"
+        />
+
+</RelativeLayout>

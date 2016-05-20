@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewBlog"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="heading"
+        android:textColor="#ed0b7f"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewheading"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewBlog"
+        android:layout_toEndOf="@+id/imageViewBlog"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Insert Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewInsertDate"
+        android:layout_below="@+id/textViewheading"
+        android:layout_toRightOf="@+id/imgViewCalener"
+        android:layout_toEndOf="@+id/imgViewCalener"
+        android:maxLines="1"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_calender"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/imgViewCalener"
+        android:maxLines="1"
+        android:layout_alignBottom="@id/textViewInsertDate"
+        android:layout_below="@+id/textViewheading"
+        android:layout_toRightOf="@+id/imageViewBlog"
+        android:layout_toEndOf="@+id/imageViewBlog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Brief"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewBrief"
+        android:layout_below="@+id/textViewInsertDate"
+        android:layout_toRightOf="@+id/imageViewBlog"
+        android:layout_toEndOf="@+id/imageViewBlog"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:id="@+id/imageViewRead"
+        android:src="@drawable/but_readmore"
+        android:layout_below="@+id/textViewBrief"
+        android:layout_alignLeft="@+id/textViewBrief"
+        android:layout_alignStart="@+id/textViewBrief" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+  <TextView android:id="@+id/text1"
+    android:layout_weight="0.8"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text= "Hie"/>
+
+    <ImageView
+        android:id="@+id/del_note"
+        android:layout_weight="0.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_gray"/>
+
+</LinearLayout>

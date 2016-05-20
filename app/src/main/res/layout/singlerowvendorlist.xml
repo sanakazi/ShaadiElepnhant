@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageViewvendorlisticon"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textViewFullName"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageViewvendorLocation"
+        android:layout_alignStart="@+id/imageViewvendorLocation" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/location"
+        android:id="@+id/imageViewvendorLocation"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_alignBottom="@+id/textViewAddress"
+        android:layout_toRightOf="@+id/imageViewvendorlisticon"
+        android:layout_toEndOf="@+id/imageViewvendorlisticon" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Location Name"
+        android:id="@+id/textViewAddress"
+        android:layout_below="@+id/textViewFullName"
+        android:layout_toRightOf="@+id/imageViewvendorLocation"
+        android:layout_toEndOf="@+id/imageViewvendorLocation" />
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=","
+        android:id="@+id/textViewComma"
+        android:layout_below="@+id/textViewFullName"
+        android:layout_toRightOf="@+id/textViewAddress"
+       />
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CityName"
+        android:id="@+id/textViewCityNam"
+        android:layout_below="@+id/textViewFullName"
+        android:layout_toRightOf="@+id/textViewComma"
+        />
+
+
+
+    <RatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5dp"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:progressDrawable="@drawable/ratingbar"
+        android:longClickable="false"
+
+        android:layout_below="@+id/textViewAddress"
+        android:layout_alignLeft="@id/imageViewvendorLocation"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    >
+
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_edit_text_background"
+        android:layout_margin="@dimen/dialog_event_name_margin"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/note_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_title"
+        android:background="@drawable/dialog_edit_text_background"
+        android:lines="15"
+        android:maxLines="20"
+        android:layout_margin="@dimen/dialog_event_name_margin"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:gravity="start"
+        android:text=" "
+        />
+
+
+    <Button
+        android:id="@+id/note_save"
+        android:layout_below="@+id/note_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"/>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+     android:layout_below="@+id/note_save"
+     android:visibility="invisible"
+     />
+</RelativeLayout>

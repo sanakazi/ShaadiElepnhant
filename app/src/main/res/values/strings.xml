@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">Shaadi Elephant</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="txtLabelLogin">Login</string>
+    <string name="forgotpassword">Forgot Password | Register Now</string>
+    <string name="title_activity_registration">Sign Up</string>
+
+    <!--dialog_add_budget-->
+    <string name="dialog_budget_title">Budget for</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="select_date">Select Date</string>
+    <string name="add">Add</string>
+    <string name="budget">Total Budget</string>
+
+    <!--dialog_add_budget_category-->
+    <string name="event_name_budget_category">Enter Planned Cost</string>
+
+    <!--dialog_add_fav_vendors-->
+    <string name="dialog_fav_vendors_title">Add Vendor</string>
+    <string name="enter_favvendor_name">Enter Vendor Name</string>
+    <string name="enter_favvendor_brief">Brief</string>
+    <string name="enter_favvendor_address">Address</string>
+    <string name="enter_favvendor_phone">Mobile No.</string>
+    <string name="spinner_title">Vendor Category</string>
+
+
+    <!--dialog_add_checklist-->
+    <string name="dialog_checklist_title">Checklist for</string>
+    <string name="dialog_checklist_category_title">Category</string>
+    <string name="event_name_checklistcategory">Enter Category Name</string>
+    <string name="dialog_checklist_item_title">Item</string>
+    <string name="event_name_checklist_item">Enter Item Name</string>
+    <string name="days_checklist_item">Completion Date Days Before</string>
+    <string name="spinner_title_checklist">Status</string>
+
+
+    <!--dialog_budgetitem_finalize_vendor-->
+    <string name="budget_item_vendor_title">Vendor Finalization</string>
+    <string name="budget_item_vendor">Select Vendor</string>
+    <string name="budget_item_vendor_name">Vendor Name</string>
+    <string name="budget_item_vendor_phone">Vendor Phone</string>
+    <string name="budget_item_vendor_other_remarks">Other Remarks</string>
+    <string name="budget_item_vendor_totalCost"> Total Cost</string>
+    <string name="budget_item_vendor_advance"> Advance/Amount Paid</string>
+
+    <!--dialog_budgetitem_makepending_payment-->
+    <string name="budget_item_vendor_payment_title">Make Pending Payment</string>
+    <string name="budget_item_vendor_payment_pending">Amount Paid</string>
+
+    <!--dialog_add_invitation-->
+    <string name="add_invitation">Invitation For</string>
+    <string name="invitation_title_add">Add Invitation</string>
+    <string name="invitation_title_add_name">Invitation Name</string>
+
+
+    <!--dialog_add_guest_invite-->
+    <string name="add_guest">Add Guest</string>
+    <string name="add_guest_name">Guest Name</string>
+    <string name="add_guest_contact">Contact No</string>
+    <string name="add_guest_email">Email-ID</string>
+
+    <!--dialog_edit_mypage-->
+    <string name="edit_title">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="change_pass_title">Change Password</string>
+    <string name="old_pass">Enter Old Password</string>
+    <string name="new_pass">Enter New Password</string>
+    <string name="retype_new_pass">Retype New Password</string>
+
+
+    <!--dialog_vendorlist_filter-->
+    <string name="filter_title">Filter Result</string>
+    <string name="search">Search</string>
+
+
+    <!--singlerow_budet_item_child-->
+    <string name="txt_actual">Actual: </string>
+    <string name="txt_diff">Diff: </string>
+    <string name="txt_paid">Paid: </string>
+    <string name="txt_pending">Pending: </string>
+    <string name="txt_select_vendor"><u><i>Select from favorite Vendor >></i></u> </string>
+    <string name="txt_vendor_payment"><u><i>Make pending payment >></i></u> </string>
+
+
+    <!--custom_progress_dialog-->
+    <string name="loading_title">   Loading...</string>
+
+
+    <!--fragment_mynotes-->
+    <string name="add_notes">Add New Note</string>
+
+    <!--dialog_add_mynotes-->
+    <string name="enternote_title">Enter Note Title</string>
+
+    <!--fragment_contactus-->
+    <string name="contactus_title"><b><u>Contact Us </u></b> </string>
+    <string name="contactus_app_name">Shaadi Elephant</string>
+    <string name="contactus_address1">Raheja Heights,</string>
+    <string name="contactus_address2">Malad East, </string>
+    <string name="contactus_address3">Mumbai - 400097</string>
+    <string name="contactus_number">+91-9969 670679 </string>
+    <string name="contactus_email">contact@shaadielephant.com</string>
+    <string name="contactus_social_media">Social Media</string>
+
+
+    <!--fragmentplanning-->
+    <string name="planning_checklist">Planning made easier with checklists.</string>
+    <string name="planning_budget">Save money while planning.</string>
+    <string name="planning_website">Carry your wedding memories where ever you go.</string>
+    <string name="planning_fav_vendors">Shortlist your favourite vendors.</string>
+    <string name="planning_einvites">Free E-Invites will save your day! (also get hassle free RSVPs).</string>
+
+
+    <!--dialog_forgot_password-->
+    <string name="dialog_forgot_title">Forgot Password?</string>
+    <string name="forgot_send_email">Send </string>
+    <string name="enter_email">Enter Email</string>
+
+
+    <!--dialog_comments_rating-->
+    <string name="enter_comments">Comments</string>
+    <string name="enter_comments_title">Leave a comment</string>
+    <string name="submit_comments">Submit</string>
+    <string name="user_comments">Write your Review</string>
+
+
+    <!--fragmentmypage-->
+    <string name="member_since">Member since: </string>
+    <string name="change_password"><u>Change Password</u></string>
+
+
+    <!--fragment_login-->
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register_now">Register Now</string>
+    <string name="or">Or</string>
+    <string name="login_facebook">Login with facebook</string>
+    <string name="login_twitter">Login with twitter</string>
+
+
+    <!--twitter and facebbok-->
+    <!--  <string name="twitter_consumer_key">TvmqChGVFraY2NySfw9dURdYV</string>
+      <string name="twitter_consumer_secret"> OJclJU9GthnDJtJcznVIe4OkrlEXPc5OLyrTelHGIoO3LtnoaP</string>-->
+
+        <string name="twitter_consumer_key">nJNou6KMwPyODJx1YWVNdWcJW</string>
+        <string name="twitter_consumer_secret"> 9X10gUWcezMMKEQCHcKLTJtLBqqm0fN0R6zv918dnfv2FfwnBi</string>
+
+
+    <!--  <string name="facebook_app_id">906168876169994</string>-->
+   <string name="facebook_app_id">971878926252301</string>
+
+
+     <!--fragmentbudget_item-->
+    <string name="myBudget">My Budget</string>
+    <string name="plannedCost">Planned Cost</string>
+    <string name="paid">Paid</string>
+    <string name="pending">Pending</string>
+    <string name="available">Available</string>
+    <string name="actual">Actual</string>
+
+    <!--mydesignerspeaklist-->
+    <string name="askExpert">Ask an Expert</string>
+    <string name="dialog_expert_subject">Ask an Expert</string>
+    <string name="dialog_expert_brief">Message</string>
+
+
+
+    <string-array name="navlist">
+        <item>Home</item>
+        <item>Login</item>
+        <item>Vendor</item>
+        <item>Planning</item>
+        <item>Blogs</item>
+        <item>Designer Speak</item>
+        <item>Featured Wedding</item>
+        <item>My Page</item>
+        <item>Send E-invite</item>
+        <item>Contact</item>
+    </string-array>
+
+
+    <string-array name="navlistlogout">
+        <item>Home</item>
+        <item>Logout</item>
+        <item>Vendor</item>
+        <item>Planning</item>
+        <item>Blogs</item>
+        <item>Designer Speak</item>
+        <item>Featured Wedding</item>
+        <item>My Page</item>
+        <item>Send E-invite</item>
+        <item>Contact</item>
+    </string-array>
+
+    <!--content_registration-->
+    <string name="name">Name</string>
+    <string name="emailID">EmailID</string>
+    <string name="password">Password</string>
+    <string name="repassword">Retype Password</string>
+    <string name="phoneNo">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="register">Sign Up</string>
+    <string name="title_activity_hello">hello</string>
+
+</resources>

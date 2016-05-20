@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:paddingBottom="@dimen/dialog_title_cotainer_padding_bottom">
+
+        <TextView
+            android:id="@+id/comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_comments_title"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dialog_title_margin_top"/>
+
+        <ImageView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/close"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="15dp"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:progressDrawable="@drawable/ratingbar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/comment_title"
+
+            />
+
+        <EditText
+            android:id="@+id/comments_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:background="@drawable/dialog_edit_text_background"
+            android:lines="4"
+            android:maxLines="4"
+            android:layout_margin="@dimen/dialog_event_name_margin"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:hint="@string/enter_comments"/>
+
+
+
+        <Button
+            android:id="@+id/comment_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/dialog_event_name_margin"
+            android:background="@drawable/btn_rounded_add"
+            android:text="@string/submit_comments"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/comments_text"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

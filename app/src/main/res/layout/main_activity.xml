@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plain_bg"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:src="@drawable/shaddi_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+        <ImageView
+            android:id="@+id/imageViewTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flower_top"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/imageViewvendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vendor"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="110dp"
+             />
+
+        <ImageView
+            android:id="@+id/imageViewplanning"
+            android:src="@drawable/ic_planning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="110dp"
+         />
+        <ImageView
+            android:id="@+id/imageVieweinvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_einvites"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="210dp"
+             />
+
+        <ImageView
+            android:id="@+id/imageViewMyPage"
+            android:src="@drawable/ic_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="210dp"
+             />
+
+
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageViewTop"
+    android:id="@+id/rl2">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewBottom"
+        android:src="@drawable/flower_bottom"
+        android:layout_alignParentLeft="true"
+
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCommunity"
+        android:src="@drawable/ic_blog"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewContact"
+        android:src="@drawable/ic_contact"
+        android:layout_below="@+id/imageViewCommunity"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        />
+
+
+</RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/imageViewLogin"
+            android:src="@drawable/login_leaf"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/imageViewLogout"
+            android:textColor="#ffffff"
+            android:background="@drawable/logout_leaf"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:id="@+id/rl1"
+   >
+    <ImageView
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_gray"
+        android:id="@+id/img_del"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_gray"
+        android:id="@+id/img_edit"
+        android:layout_toLeftOf="@+id/img_del"
+        />
+
+<HorizontalScrollView
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/img_del"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    >
+    <LinearLayout
+
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/l1"
+        android:background="@drawable/btn_square_budget"
+        android:layout_below="@+id/scroll"
+        >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:padding="3dp"
+                android:id="@+id/myBudget"
+                android:text="@string/myBudget"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:id="@+id/getmyBudget" />
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_margin="2dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:padding="3dp"
+                android:id="@+id/plannedCost"
+                android:text="@string/plannedCost"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:padding="3dp"
+                android:gravity="center"
+                android:id="@+id/getplannedCost" />
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_margin="2dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:padding="3dp"
+            android:id="@+id/paid"
+            android:text="@string/paid"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:id="@+id/getpaid" />
+
+    </LinearLayout>
+        <View
+            android:id="@+id/view3"
+            android:layout_margin="2dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+
+            />
+
+
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:padding="3dp"
+            android:id="@+id/pending"
+            android:text="@string/pending" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:id="@+id/getpending" />
+
+</LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_margin="2dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:padding="3dp"
+            android:id="@+id/available"
+            android:text="@string/available"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:id="@+id/getavailable" />
+</LinearLayout>
+
+
+        <View
+            android:id="@+id/view5"
+            android:layout_margin="2dp"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:padding="3dp"
+                android:id="@+id/actual"
+                android:text="@string/actual"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:id="@+id/getactual" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/scroll"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l2"
+        android:background="@drawable/btn_square_budget">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus_icon"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/add"
+            android:text="Add New Category"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/listbudget_item"
+        android:layout_below="@id/l2"        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:childDivider="@drawable/divider_line"
+
+        >
+        <!-- android:groupIndicator="@drawable/indicator_left" -->
+    </ExpandableListView>
+
+</RelativeLayout>

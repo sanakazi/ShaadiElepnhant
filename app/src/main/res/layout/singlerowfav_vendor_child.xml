@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#dde2e7"
+    >
+
+    <TextView
+
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hyphen"
+        android:text="-"
+        android:layout_marginLeft="40dp"
+        android:textColor="#ed0b7f"/>
+
+    <TextView
+        android:padding="5dp"
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullName"
+        android:text="Full Name"
+       android:layout_toRightOf="@id/hyphen"
+        android:textColor="#ed0b7f"/>
+
+
+    <TextView
+        android:padding="5dp"
+        android:layout_weight="3.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:text="0987654321"
+        android:paddingLeft="5dp"
+        android:layout_toLeftOf="@id/img_del"
+        android:layout_marginRight="20dp"/>
+
+
+    <ImageView
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_gray"
+        android:id="@+id/img_del"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+</LinearLayout>
